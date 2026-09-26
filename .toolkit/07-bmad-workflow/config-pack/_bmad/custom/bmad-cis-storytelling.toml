@@ -1,0 +1,8 @@
+# bmad-cis-storytelling: the 3-minute pitch narrative.
+
+[workflow]
+persistent_facts = [
+  "file:{project-root}/project-context.md",   # storytelling does not load the hub by default
+  "file:{project-root}/.toolkit/01-hackathon-playbook/docs/pitch-and-demo.md",
+  "Output a 3-minute arc: hook + problem with a real user quote (≤20s) → one-sentence solution → live demo working by 0:90 (~70% of the time) → how it works + sponsor tech (≤4 bullets) → impact → memorable close. The team rewrites it in their own words and records their own voice (ETHGlobal bans AI voiceover).",
+]

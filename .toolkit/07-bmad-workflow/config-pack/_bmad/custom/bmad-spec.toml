@@ -1,0 +1,9 @@
+# bmad-spec: shape the five-field kernel for a hackathon demo.
+
+[workflow]
+persistent_facts = [
+  "file:{project-root}/.toolkit/skills/hackathon-strategy/SKILL.md",
+  "Hackathon spec rules — Why: one sentence a judge can repeat. Capabilities: ONLY what appears in the 3-minute demo. Constraints: deadline, fixed stack, required sponsor tech, must run live on venue Wi-Fi. Non-goals: aggressive (auth → hardcoded demo user, payments, settings, admin, multi-tenant, mobile unless judged). Success signal: 'a judge completes <core action> in under 60 seconds'.",
+  "Add a companion file mock-list.md listing every slow/flaky/expensive dependency to fake for the demo, and how.",
+  "When breaking into stories: Story 1 is a deployed walking skeleton (end-to-end, hardcoded data, live URL). Order the rest by DEMO VALUE, not technical layer. Each story ≤ ~500 changed lines. Mark a CUT LINE — stories below it are stretch.",
+]

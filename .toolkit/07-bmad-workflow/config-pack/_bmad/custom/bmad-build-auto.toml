@@ -1,0 +1,25 @@
+# bmad-build-auto (unattended / bmad-loop overnight runs): same rules as bmad-build, same demo-safety gate.
+
+[workflow]
+persistent_facts = [
+  "file:{project-root}/.toolkit/skills/hackathon-frontend/SKILL.md",
+  "file:{project-root}/.toolkit/skills/hackathon-backend/SKILL.md",
+  "file:{project-root}/.toolkit/01-hackathon-playbook/docs/project-structure.md",
+  "Unattended hackathon run: implement only low-risk, well-specified stories. Never add dependencies outside .toolkit/06-repo-catalog/README.md's default kit without escalating. Append AI-generated files to AI_USAGE.md.",
+]
+
+[[workflow.review_layers]]
+id = "hackathon-demo-safety"
+name = "Hackathon Demo-Safety Reviewer"
+instruction = """
+Launch a context-free subagent with this prompt:
+
+You review a hackathon change for LIVE-DEMO risk only. For the diff below, list every issue with file:line and a one-line fix:
+crashes instead of toasts; missing loading/empty/error states; secrets or NEXT_PUBLIC_ server keys; Server Actions/route handlers without auth/ownership checks; tables without RLS or seed data; LLM/external calls without timeout, streaming, rate limit or DEMO_MODE fallback.
+Output a Markdown list only.
+
+DIFF:
+{diff_output}
+
+Do not invoke any skill. Return only the review result.
+"""

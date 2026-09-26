@@ -1,0 +1,50 @@
+# bmad-code-review: add OWASP, accessibility/performance and anti-slop layers on top of the shipped reviewers.
+# Run once at feature freeze on the demo-critical diff.
+
+[workflow]
+persistent_facts = [
+  "file:{project-root}/.toolkit/03-backend/docs/security.md",
+  "Priority for a hackathon: anything that can crash or hang the live demo, and committed secrets, outrank style issues.",
+]
+
+[[workflow.review_layers]]
+id = "owasp-api"
+name = "OWASP API Top 10 (2023) Reviewer"
+instruction = """
+Launch a context-free subagent with this prompt:
+
+Read {project-root}/.toolkit/03-backend/docs/security.md fully. Review the diff below against its OWASP API Top 10 (2023) mapping and pre-demo checklist.
+For each finding give: API1–API10 category, file:line, the exploit in one sentence, the fix. Flag committed secrets and NEXT_PUBLIC_ server keys as critical.
+Output a Markdown list only.
+
+DIFF:
+{diff_output}
+
+Do not invoke any skill. Return only the review result.
+"""
+
+[[workflow.review_layers]]
+id = "a11y-cwv"
+name = "Accessibility & Core Web Vitals Reviewer"
+when = "The diff touches UI files (.tsx, .jsx, .css, .html, .vue, .svelte)."
+instruction = """
+Launch a context-free subagent with this prompt:
+
+Read {project-root}/.toolkit/02-frontend/docs/standards.md fully. Review the diff below against its WCAG 2.2 AA checklist (contrast 4.5:1 / 3:1, focus visible and not obscured, targets ≥24px, labels, semantics) and Core Web Vitals rules (media dimensions / CLS, heavy handlers / INP, hero / LCP).
+Output a Markdown list of violations with file:line and the fix.
+
+DIFF:
+{diff_output}
+
+Do not invoke any skill. Return only the review result.
+"""
+
+[[workflow.review_layers]]
+id = "anti-slop"
+name = "Impeccable Anti-Slop Detector"
+when = "The diff touches UI files and Node.js is available."
+instruction = """
+Run in the project root: npx impeccable detect --json <each changed UI file or its folder>
+Summarise the findings grouped by rule. Treat rules that conflict with the deliberate aesthetic recorded in docs/design.md as informational, not defects.
+If the command is unavailable, say so and skip this layer.
+"""

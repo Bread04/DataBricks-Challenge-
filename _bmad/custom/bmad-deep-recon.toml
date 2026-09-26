@@ -1,0 +1,12 @@
+# bmad-deep-recon: fast, hackathon-shaped research (15-minute budget).
+# Facts shape WHAT to ask, never what is true (the skill's research firewall).
+
+[workflow]
+preset = "quick"
+persistent_facts = [
+  "Hackathon context: research must finish in ~15 minutes and serve one decision (idea gap, API/library choice, API limits and free tiers, or real user complaints to quote in the pitch).",
+]
+preferred_sources = [
+  "Official vendor docs and pricing pages",
+  "GitHub repos (check last push and archive status)",
+]

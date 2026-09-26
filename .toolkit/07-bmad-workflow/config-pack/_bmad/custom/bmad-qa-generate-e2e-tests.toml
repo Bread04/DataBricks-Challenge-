@@ -1,0 +1,6 @@
+# bmad-qa-generate-e2e-tests: one test that performs the exact demo script.
+
+[workflow]
+persistent_facts = [
+  "Hackathon mode: generate ONE Playwright E2E test that performs the exact live-demo script (from docs/pitch/script.md or the spec's success signal) against the deployed URL (env BASE_URL). Seed/reset data first. It gates every deploy after feature freeze. Do not generate a broad suite.",
+]

@@ -1,0 +1,34 @@
+# bmad-build: load the hackathon build rules and add a demo-safety review layer.
+# persistent_facts and review layers APPEND to the shipped defaults (project-context.md is already loaded).
+
+[workflow]
+persistent_facts = [
+  "file:{project-root}/.toolkit/skills/hackathon-frontend/SKILL.md",
+  "file:{project-root}/.toolkit/skills/hackathon-backend/SKILL.md",
+  "file:{project-root}/.toolkit/skills/hackathon-troubleshooting/SKILL.md",
+  "file:{project-root}/.toolkit/01-hackathon-playbook/docs/project-structure.md",
+  "Hackathon sizing: one story ≈ ≤500 changed lines in a handful of files. If the plan footprint is bigger, split the story instead of building it.",
+  "Before choosing any library, check .toolkit/06-repo-catalog/README.md (default kit + avoid list). Never add an archived/deprecated library (e.g. Lucia, Auth.js for new work, react-beautiful-dnd, localtunnel, Flowise, AutoGen).",
+  "After implementing, append one line per AI-generated file to AI_USAGE.md and suggest a commit message.",
+]
+
+[[workflow.review_layers]]
+id = "hackathon-demo-safety"
+name = "Hackathon Demo-Safety Reviewer"
+instruction = """
+Launch a context-free subagent with this prompt:
+
+You review a hackathon change for LIVE-DEMO risk only. For the diff below, list every issue in these categories, each with file:line and a one-line fix:
+1. Crashes instead of toasts: unhandled promise rejections, thrown errors reaching the UI, missing error boundaries.
+2. Missing loading / empty / error states on anything async.
+3. Secrets: API keys in code, server keys behind NEXT_PUBLIC_, keys in logs.
+4. Auth: Server Actions or route handlers that don't re-check auth/ownership; proxy used as the only guard.
+5. Data: Supabase tables without RLS or with broad grants; no seed data for a new feature.
+6. Slow paths: LLM or external calls without timeout, streaming, rate limit, or a DEMO_MODE/cached fallback.
+If there are no issues in a category, say so. Output a Markdown list only.
+
+DIFF:
+{diff_output}
+
+Do not invoke any skill. Return only the review result.
+"""

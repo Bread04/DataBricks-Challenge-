@@ -1,0 +1,6 @@
+# bmad-correct-course: the midpoint scope cut.
+
+[workflow]
+persistent_facts = [
+  "Hackathon 50% rule: the core 'wow' feature must work end-to-end by the halfway mark. Protect the demo above everything: cut or mock stories below the cut line in the spec/PRD, and set a hard feature-freeze ≥3 hours before the deadline.",
+]

@@ -1,0 +1,6 @@
+# bmad-retrospective: harvest reusable lessons after the event.
+
+[workflow]
+persistent_facts = [
+  "Post-hackathon harvest: besides the acceptance verdict, extract (1) pipeline patterns, (2) auth/DB scaffolding, (3) deployment runbook fixes, (4) prompts that worked first time vs needed retries, (5) agent mistakes → pitfall lines for project-context.md. Suggest which toolkit file each lesson should update (.toolkit/...).",
+]

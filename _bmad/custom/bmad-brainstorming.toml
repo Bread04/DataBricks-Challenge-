@@ -1,0 +1,7 @@
+# bmad-brainstorming: seed ideation with the event context.
+
+[workflow]
+persistent_facts = [
+  "file:{project-root}/docs/research.md",
+  "Hackathon ideation: every idea must start from a real frustration of a specific person (not 'a cool use of <tool>'), name its 30-second AHA moment, and name the sponsor API it uses meaningfully. Finish by scoring the top ideas against the event rubric.",
+]

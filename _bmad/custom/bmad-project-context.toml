@@ -1,0 +1,9 @@
+# bmad-project-context: offer the toolkit as standing sources when writing AGENTS.md.
+
+[workflow]
+external_sources = [
+  "file:{project-root}/.toolkit/skills/hackathon-backend/SKILL.md",
+  "file:{project-root}/.toolkit/skills/hackathon-frontend/SKILL.md",
+  "file:{project-root}/.toolkit/skills/hackathon-deployment/SKILL.md",
+  "file:{project-root}/.toolkit/01-hackathon-playbook/docs/project-structure.md",
+]

@@ -1,0 +1,8 @@
+# bmad-architecture: a quick hackathon spine, not a full architecture.
+
+[workflow]
+persistent_facts = [
+  "file:{project-root}/.toolkit/01-hackathon-playbook/docs/project-structure.md",
+  "file:{project-root}/.toolkit/skills/hackathon-backend/SKILL.md",
+  "Produce a QUICK spine (one page, ~20 minutes): data model (2–3 tables), API contracts / Server Actions, folder ownership per builder, and the 3 riskiest integration points with a fallback each. No microservices, queues or GraphQL unless the demo needs them.",
+]
