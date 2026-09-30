@@ -1,0 +1,178 @@
+{
+ "ChromeDevTools/chrome-devtools-mcp": {
+  "full_name": "ChromeDevTools/chrome-devtools-mcp",
+  "stars": 52470,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "Apache-2.0",
+  "description": "Chrome DevTools for coding agents"
+ },
+ "firecrawl/firecrawl-mcp-server": {
+  "full_name": "firecrawl/firecrawl-mcp-server",
+  "stars": 7501,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "MIT",
+  "description": "\ud83d\udd25 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients."
+ },
+ "neondatabase/mcp-server-neon": {
+  "full_name": "neondatabase/mcp-server-neon",
+  "stars": 649,
+  "pushed_at": "2026-09-21",
+  "archived": false,
+  "license": "MIT",
+  "description": "MCP server for interacting with Neon Management API and databases"
+ },
+ "mongodb-js/mongodb-mcp-server": {
+  "full_name": "mongodb-js/mongodb-mcp-server",
+  "stars": 1135,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "Apache-2.0",
+  "description": "A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters."
+ },
+ "redis/mcp-redis": {
+  "full_name": "redis/mcp-redis",
+  "stars": 625,
+  "pushed_at": "2026-09-21",
+  "archived": false,
+  "license": "MIT",
+  "description": "The official Redis MCP Server is a natural language interface designed for agentic applications to manage and search dat"
+ },
+ "netlify/netlify-mcp": {
+  "full_name": "netlify/netlify-mcp",
+  "stars": 63,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": null,
+  "description": "Netlify's Official MCP server"
+ },
+ "awslabs/mcp": {
+  "full_name": "awslabs/mcp",
+  "stars": 9718,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "Apache-2.0",
+  "description": "Open source MCP Servers for AWS"
+ },
+ "bytebase/dbhub": {
+  "full_name": "bytebase/dbhub",
+  "stars": 3550,
+  "pushed_at": "2026-09-21",
+  "archived": false,
+  "license": "MIT",
+  "description": "Token conscious database MCP server for Postgres, MySQL, SQL Server, Oracle, MariaDB, SQLite."
+ },
+ "snyk/agent-scan": {
+  "full_name": "snyk/agent-scan",
+  "stars": 3079,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "Apache-2.0",
+  "description": "Security scanner for AI agents, MCP servers and agent skills."
+ },
+ "anthropics/claude-plugins-official": {
+  "full_name": "anthropics/claude-plugins-official",
+  "stars": 36616,
+  "pushed_at": "2026-09-21",
+  "archived": false,
+  "license": "Apache-2.0",
+  "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins."
+ },
+ "obra/superpowers": {
+  "full_name": "obra/superpowers",
+  "stars": 290060,
+  "pushed_at": "2026-09-20",
+  "archived": false,
+  "license": "MIT",
+  "description": "An agentic skills framework & software development methodology that works."
+ },
+ "thedotmack/claude-mem": {
+  "full_name": "thedotmack/claude-mem",
+  "stars": 94460,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "Apache-2.0",
+  "description": "Persistent Context Across Sessions for Every Agent \u2013  Captures everything your agent does during sessions, compresses it"
+ },
+ "modelcontextprotocol/registry": {
+  "full_name": "modelcontextprotocol/registry",
+  "stars": 7273,
+  "pushed_at": "2026-09-16",
+  "archived": false,
+  "license": "NOASSERTION",
+  "description": "A community driven registry service for Model Context Protocol (MCP) servers."
+ },
+ "modelcontextprotocol/mcpb": {
+  "full_name": "modelcontextprotocol/mcpb",
+  "stars": 2118,
+  "pushed_at": "2026-05-26",
+  "archived": false,
+  "license": "NOASSERTION",
+  "description": "Desktop Extensions: One-click local MCP server installation in desktop apps"
+ },
+ "browserbase/mcp-server-browserbase": {
+  "full_name": "browserbase/mcp-server-browserbase",
+  "stars": 3412,
+  "pushed_at": "2026-07-20",
+  "archived": true,
+  "license": "Apache-2.0",
+  "description": "Allow LLMs to control a browser with Browserbase and Stagehand"
+ },
+ "perplexityai/modelcontextprotocol": {
+  "full_name": "perplexityai/modelcontextprotocol",
+  "stars": 2538,
+  "pushed_at": "2026-08-27",
+  "archived": false,
+  "license": "MIT",
+  "description": "The official MCP server implementation for the Perplexity API Platform"
+ },
+ "exa-labs/exa-mcp-server": {
+  "full_name": "exa-labs/exa-mcp-server",
+  "stars": 5040,
+  "pushed_at": "2026-08-21",
+  "archived": false,
+  "license": "MIT",
+  "description": "Exa MCP for web search and web crawling!"
+ },
+ "ref-tools/ref-tools-mcp": {
+  "full_name": "ref-tools/ref-tools-mcp",
+  "stars": 1177,
+  "pushed_at": "2026-09-14",
+  "archived": false,
+  "license": "MIT",
+  "description": "Helping coding agents never make mistakes working with public or private libraries without wasting the context window."
+ },
+ "penpot/penpot": {
+  "full_name": "penpot/penpot",
+  "stars": 60258,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "MPL-2.0",
+  "description": "Penpot: The open-source design platform for Product teams that need scalable collaboration."
+ },
+ "ollama/ollama": {
+  "full_name": "ollama/ollama",
+  "stars": 181461,
+  "pushed_at": "2026-09-21",
+  "archived": false,
+  "license": "MIT",
+  "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+ },
+ "anthropics/claude-code-action": {
+  "full_name": "anthropics/claude-code-action",
+  "stars": 8923,
+  "pushed_at": "2026-09-19",
+  "archived": false,
+  "license": "MIT",
+  "description": ""
+ },
+ "modelcontextprotocol/servers-archived": {
+  "full_name": "modelcontextprotocol/servers-archived",
+  "stars": 303,
+  "pushed_at": "2025-05-28",
+  "archived": true,
+  "license": "MIT",
+  "description": "Reference MCP servers that are no longer maintained"
+ }
+}

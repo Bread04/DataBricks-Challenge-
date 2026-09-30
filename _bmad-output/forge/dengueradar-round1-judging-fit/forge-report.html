@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DengueRadar Round 1 — Forge Report</title>
+<style>
+  :root {
+    --ink: #17181c;
+    --muted: #5b5e68;
+    --bg: #f7f6f2;
+    --panel: #ffffff;
+    --line: #e3e1da;
+    --accent: #b3401f;
+    --accent-soft: #f1e3dc;
+    --lock: #2f6b3a;
+    --lock-soft: #e3efe3;
+    --crack: #9a6a00;
+    --crack-soft: #fbedd0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    line-height: 1.5;
+    padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+  }
+  h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  .subtitle { color: var(--muted); font-size: 0.95rem; margin: 0; }
+  .seal { flex-shrink: 0; }
+  section { margin-bottom: 32px; }
+  h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+    color: var(--accent);
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  }
+  .card.lock { border-left: 4px solid var(--lock); }
+  .card.crack { border-left: 4px solid var(--crack); }
+  .tag {
+    display: inline-block;
+    font-family: -apple-system, "Segoe UI", sans-serif;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+  }
+  .tag.lock { background: var(--lock-soft); color: var(--lock); }
+  .tag.crack { background: var(--crack-soft); color: var(--crack); }
+  p { margin: 0; }
+  .personas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .persona {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-family: -apple-system, "Segoe UI", sans-serif;
+    font-size: 0.85rem;
+  }
+  .open-list li { margin-bottom: 8px; }
+  footer {
+    margin-top: 40px;
+    font-family: -apple-system, "Segoe UI", sans-serif;
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #ece9e2;
+      --muted: #a3a2a6;
+      --bg: #17181c;
+      --panel: #201f24;
+      --line: #34333a;
+      --accent: #e8804f;
+      --accent-soft: #3a2620;
+      --lock: #7bc48d;
+      --lock-soft: #1e2f22;
+      --crack: #e0b34d;
+      --crack-soft: #332a15;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ece9e2;
+    --muted: #a3a2a6;
+    --bg: #17181c;
+    --panel: #201f24;
+    --line: #34333a;
+    --accent: #e8804f;
+    --accent-soft: #3a2620;
+    --lock: #7bc48d;
+    --lock-soft: #1e2f22;
+    --crack: #e0b34d;
+    --crack-soft: #332a15;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>DengueRadar — Round 1 Judging-Fit Forge</h1>
+      <p class="subtitle">Pressure-tested against DAISI's own rubric: Problem fit &amp; social impact 30% · Solution quality &amp; originality 30% · Data &amp; technical feasibility 25% · Clarity 15% — against ~140 competing teams.</p>
+    </div>
+    <div class="seal">
+      <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hardened seal">
+        <circle cx="60" cy="60" r="56" fill="none" stroke="#2f6b3a" stroke-width="3"/>
+        <circle cx="60" cy="60" r="48" fill="none" stroke="#2f6b3a" stroke-width="1.5" stroke-dasharray="2 4"/>
+        <text x="60" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#2f6b3a" letter-spacing="1">HARDENED</text>
+        <text x="60" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#2f6b3a">FORGE OF IDEAS</text>
+        <text x="60" y="84" text-anchor="middle" font-family="Georgia, serif" font-size="8" fill="#2f6b3a">2026-09-30</text>
+      </svg>
+    </div>
+  </header>
+
+  <section>
+    <h2>Outcome</h2>
+    <p>Six branches opened, six driven to a locked decision, plus two factual gaps closed outright. The submission's argument no longer leans on the forecast/map (table stakes per the brief) or on a model result that doesn't exist yet — it leans on a data-sourcing constraint the team actually solved, a prescriptive layer that's honest about what it can and can't route, and a validation methodology presented as designed rigor rather than a fabricated number.</p>
+  </section>
+
+  <section>
+    <h2>Locked decisions</h2>
+
+    <div class="card lock">
+      <span class="tag lock">Lock</span>
+      <p><strong>No institutional routing claim.</strong> Actions are framed as a checklist any engaged resident, RC volunteer, or MCST council member can act on — not an alert routed to a specific Town Council/RC/MCST, since planning-area boundaries don't map to those institutions and no dataset bridges the two.</p>
+    </div>
+
+    <div class="card lock">
+      <span class="tag lock">Lock</span>
+      <p><strong>Top 3 drivers → stacked, deduplicated, ranked actions</strong> — not one leading driver collapsed to one action. Fixes a real self-contradiction already sitting in <code>docs/model-definitions.md</code> §6.</p>
+    </div>
+
+    <div class="card lock">
+      <span class="tag lock">Lock</span>
+      <p><strong>Second routing axis: cause, not just driver.</strong> NEA's own cluster feed tags breeding source (<code>HOMES</code> / <code>PUBLIC_PLACES</code> / <code>CONSTRUCTION_SITES</code>). Construction-site clusters route to NEA/BCA — nationally scoped, so it doesn't reopen the routing lock above. The field is sparse (2 of 11 clusters), so this is a bonus layer with an honest "root cause not yet identified" fallback, not the backbone.</p>
+    </div>
+
+    <div class="card lock">
+      <span class="tag lock">Lock</span>
+      <p><strong>Round 1's proof point is the validation methodology</strong> (rolling-origin testing, leave-areas-out, cost-matrix threshold) — not a model result. No task exists before 4 Oct to actually train the model or run a backtest; that work is a Build Sprint deliverable, gated on being shortlisted.</p>
+    </div>
+
+    <div class="card lock">
+      <span class="tag lock">Lock</span>
+      <p><strong>The idea-originality claim is the data wall, not the forecast.</strong> Official Singapore open data has no per-area historical dengue record. DengueRadar's original move was finding and validating two citable archives (SGCharts 2015–2020, Nature Scientific Data 2022) to build the training history the brief requires — claimed as "we solved the constraint," not "we're the only ones who could."</p>
+    </div>
+
+    <div class="card lock">
+      <span class="tag lock">Lock</span>
+      <p><strong>The whole submission argues idea + solution + execution soundness</strong> — never a fabricated performance number, anywhere in the deck.</p>
+    </div>
+
+    <div class="card crack">
+      <span class="tag crack">Resolved fact-check</span>
+      <p><strong>2020 dengue case count = 35,261</strong> — reproduced directly from <code>analysis/data/weekly_idb.csv</code>. The competing 35,012 figure has no traceable source and should be dropped.</p>
+    </div>
+
+    <div class="card crack">
+      <span class="tag crack">Resolved fact-check</span>
+      <p><strong>The climate "why now" line cites the official DAISI brief directly</strong> — cheapest possible source. Caveat: the team's own research shows the relationship is more nuanced than "hot + rainy = worse" (temperature above 31°C often dampens risk; heavy flushing rain lowers it), and the model design already reflects this correctly — don't contradict it elsewhere.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Still open</h2>
+    <ul class="open-list">
+      <li>Execution-credibility pillar: how the "pipeline already running since 28 Sep" evidence actually gets compressed onto a slide.</li>
+      <li>Doc edits to match these locks: <code>docs/model-definitions.md</code> §6, the sprint-change-proposal, and <code>docs/checkpoint-1oct.md</code> still carry superseded wording.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Voices in this session</h2>
+    <div class="personas">
+      <span class="persona">📋 John — Product Manager (installed)</span>
+      <span class="persona">🎨 Sally — UX Designer (installed)</span>
+      <span class="persona">🏗️ Winston — System Architect (installed)</span>
+      <span class="persona">🧑‍⚖️ Priya Nathan — fatigued Devpost judge (generated)</span>
+      <span class="persona">🏘️ Uncle Tan — RC volunteer (generated)</span>
+      <span class="persona">📊 Dr. Lena Ong — technical judge (generated)</span>
+      <span class="persona">🏁 Marcus — rival team captain (generated)</span>
+    </div>
+  </section>
+
+  <footer>
+    Forge session: dengueradar-round1-judging-fit · Full log: .memlog.md in this folder · Decisions distilled to forged-idea.md
+  </footer>
+</div>
+</body>
+</html>

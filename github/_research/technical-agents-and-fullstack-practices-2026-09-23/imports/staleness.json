@@ -1,0 +1,288 @@
+{
+  "today": "2026-09-23",
+  "claims": [
+    {
+      "claim": "[6] OpenAI Assistants API shut down 2026-08-26",
+      "class": "status",
+      "pub_date": "2026-08-01",
+      "recheck": "2026-11-01",
+      "stale": false
+    },
+    {
+      "claim": "[20] AutoGen + Semantic Kernel in maintenance mode; MS Agent Framework successor",
+      "class": "status",
+      "pub_date": "2025-10-01",
+      "recheck": "2026-01-01",
+      "stale": true
+    },
+    {
+      "claim": "[7] Vercel AI SDK current major v7 (7.0.111)",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[9] AI SDK v7 renames (stepCountIs->isStepCount, system->instructions, onFinish->onEnd), Node 22+, ESM-only",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[8] ToolLoopAgent default stop 20 steps; WorkflowAgent no limit",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[14] Pydantic AI 2.48.0 model-agnostic with MCP (single source, not re-checked r2)",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[4] Claude Managed Agents tokens + $0.08/running session-hour",
+      "class": "pricing",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-12-01",
+      "stale": false
+    },
+    {
+      "claim": "[32] multi-agent ~15x chat tokens; 90.2% internal eval gain (single vendor source)",
+      "class": "performance",
+      "pub_date": "2025-06-01",
+      "recheck": "2027-06-01",
+      "stale": false
+    },
+    {
+      "claim": "[33] multi-agent poor fit for shared context/coding (Anthropic + Cognition agree)",
+      "class": "pattern",
+      "pub_date": "2025-06-01",
+      "recheck": "2027-06-01",
+      "stale": false
+    },
+    {
+      "claim": "[36] MCP spec 2026-07-28 final; sessions + initialize removed; Tasks/MCP Apps extensions",
+      "class": "version",
+      "pub_date": "2026-07-01",
+      "recheck": "2026-08-01",
+      "stale": true
+    },
+    {
+      "claim": "[37] \"breaks 2025-11-25 servers\": wire-breaking but SDK v2 dual-era + 12-mo deprecation (partial)",
+      "class": "version",
+      "pub_date": "2026-07-01",
+      "recheck": "2026-08-01",
+      "stale": true
+    },
+    {
+      "claim": "[38] MCP TS SDK v2 beta (stable status unknown)",
+      "class": "version",
+      "pub_date": "2026-07-01",
+      "recheck": "2026-08-01",
+      "stale": true
+    },
+    {
+      "claim": "[40] Anthropic MCP connector beta mcp-client-2025-11-20, tools only, remote only",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[44] computer_toolset_20260801 GA; Opus 5.5 rejects computer_20251124",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[48] A2A 150+ orgs (dropped from report)",
+      "class": "ecosystem",
+      "pub_date": "2026-04-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[49] Langfuse free 50k units/mo (vendor + comparison site)",
+      "class": "pricing",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-12-01",
+      "stale": false
+    },
+    {
+      "claim": "[52] LangSmith free 5k traces/mo (vendor + comparison site)",
+      "class": "pricing",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-12-01",
+      "stale": false
+    },
+    {
+      "claim": "[53] Braintrust free 1 GB/mo, 14 days (vendor only)",
+      "class": "pricing",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-12-01",
+      "stale": false
+    },
+    {
+      "claim": "[51] ClickHouse acquired Langfuse 2026-01-16, stays OSS",
+      "class": "ecosystem",
+      "pub_date": "2026-01-01",
+      "recheck": "2026-07-01",
+      "stale": true
+    },
+    {
+      "claim": "[54] Mintlify acquired Helicone 2026-03-03; maintenance mode",
+      "class": "ecosystem",
+      "pub_date": "2026-03-01",
+      "recheck": "2026-09-01",
+      "stale": true
+    },
+    {
+      "claim": "[57] OpenAI Agents SDK DEFAULT_MAX_TURNS=10, MaxTurnsExceeded",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[66] non-default temperature 400 on Claude Opus 4.7+/Sonnet 5",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[67] GPT-6 remove temperature when reasoning != none",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[59] Anthropic cache read 0.1x (0.05x Opus 5.5), 5-min TTL, 1h write 2x",
+      "class": "pricing",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-12-01",
+      "stale": false
+    },
+    {
+      "claim": "[61] Vercel Hobby 300s incl streaming, 4.5 MB (single primary)",
+      "class": "pricing",
+      "pub_date": "2026-08-01",
+      "recheck": "2026-11-01",
+      "stale": false
+    },
+    {
+      "claim": "[72] CVE-2026-94545 next/og RCE >=16.2.0 <16.3.6, fixed 16.3.6 (GHSA + Netlify)",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[74] Supabase explicit GRANT required: new projects 2026-05-30, all 2026-10-30",
+      "class": "version",
+      "pub_date": "2026-05-01",
+      "recheck": "2026-06-01",
+      "stale": true
+    },
+    {
+      "claim": "[75] anon/service_role deprecated by end-2026 -> sb_publishable_/sb_secret_",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[76] getClaims() recommended server check",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[92] Upstash free 500K commands/month (vendor only)",
+      "class": "pricing",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-12-01",
+      "stale": false
+    },
+    {
+      "claim": "[93] Resend free 3K/mo, 100/day (vendor only)",
+      "class": "pricing",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-12-01",
+      "stale": false
+    },
+    {
+      "claim": "[86] Vercel Workflows GA 2026-04-16",
+      "class": "version",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-10-01",
+      "stale": false
+    },
+    {
+      "claim": "[82] Vercel acquired Better Auth 2026-07-07, MIT",
+      "class": "ecosystem",
+      "pub_date": "2026-07-01",
+      "recheck": "2027-01-01",
+      "stale": false
+    },
+    {
+      "claim": "[97] Tailwind Labs joins Shopify; stays MIT (Tailwind + CMSWire)",
+      "class": "ecosystem",
+      "pub_date": "2026-09-01",
+      "recheck": "2027-03-01",
+      "stale": false
+    },
+    {
+      "claim": "[100] shadcn CLI v4 with --base",
+      "class": "version",
+      "pub_date": "2026-03-01",
+      "recheck": "2026-04-01",
+      "stale": true
+    },
+    {
+      "claim": "[99] shadcn Base UI default Jul 2026, Radix still supported",
+      "class": "version",
+      "pub_date": "2026-07-01",
+      "recheck": "2026-08-01",
+      "stale": true
+    },
+    {
+      "claim": "[108] v0 free $5 credits + 7 msgs/day (two fetches: docs + pricing)",
+      "class": "pricing",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-12-01",
+      "stale": false
+    },
+    {
+      "claim": "[109] Lovable free 5 credits/day (vendor only)",
+      "class": "pricing",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-12-01",
+      "stale": false
+    },
+    {
+      "claim": "[110] Bolt free 300K tokens/day (vendor only)",
+      "class": "pricing",
+      "pub_date": "2026-09-01",
+      "recheck": "2026-12-01",
+      "stale": false
+    },
+    {
+      "claim": "[121] Lighthouse CI no release since 2025-06-25",
+      "class": "ecosystem",
+      "pub_date": "2025-06-01",
+      "recheck": "2025-12-01",
+      "stale": true
+    }
+  ],
+  "stale_count": 10,
+  "earliest_recheck": "2025-12-01",
+  "no_window_classes": []
+}

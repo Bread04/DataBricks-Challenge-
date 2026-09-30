@@ -1,0 +1,13 @@
+# bmad-review: add a pitch lens for demo scripts and Devpost write-ups.
+
+[workflow]
+persistent_facts = [
+  "file:{project-root}/.toolkit/01-hackathon-playbook/docs/pitch-and-demo.md",
+]
+
+[[workflow.lenses]]
+code = "hackathon-pitch"
+name = "Hackathon Pitch"
+applies_to = "docs"
+when = "Pitch scripts, slide outlines, demo-video scripts and Devpost/submission write-ups."
+instruction = "Read .toolkit/01-hackathon-playbook/docs/pitch-and-demo.md. Check the content against its 3-minute skeleton (hook+problem ≤20s, one-sentence solution, working demo by 0:90, ≤4 bullets of tech naming sponsor tools, impact, memorable close) and its 'what kills pitches' list. Flag hype words, ambiguity about what the product does, and anything a judge could not repeat. Report findings with the line and a rewrite."

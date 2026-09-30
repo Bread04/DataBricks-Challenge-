@@ -1,0 +1,222 @@
+{
+ "livekit/agents": {
+  "full_name": "livekit/agents",
+  "stars": 14306,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "Apache-2.0",
+  "description": "A framework for building realtime voice AI agents \ud83e\udd16\ud83c\udf99\ufe0f\ud83d\udcf9 "
+ },
+ "pipecat-ai/pipecat": {
+  "full_name": "pipecat-ai/pipecat",
+  "stars": 15765,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "BSD-2-Clause",
+  "description": "Open Source framework for voice agents, multimodal apps, and realtime AI. Maintained by Daily and the community."
+ },
+ "hexgrad/kokoro": {
+  "full_name": "hexgrad/kokoro",
+  "stars": 8933,
+  "pushed_at": "2025-08-06",
+  "archived": false,
+  "license": "Apache-2.0",
+  "description": "https://hf.co/hexgrad/Kokoro-82M"
+ },
+ "scaffold-eth/scaffold-eth-2": {
+  "full_name": "scaffold-eth/scaffold-eth-2",
+  "stars": 2048,
+  "pushed_at": "2026-08-27",
+  "archived": false,
+  "license": "MIT",
+  "description": "Open source forkable Ethereum dev stack"
+ },
+ "reown-com/appkit": {
+  "full_name": "reown-com/appkit",
+  "stars": 5443,
+  "pushed_at": "2026-09-21",
+  "archived": false,
+  "license": "NOASSERTION",
+  "description": "The full stack toolkit to build onchain app UX"
+ },
+ "OpenZeppelin/contracts-wizard": {
+  "full_name": "OpenZeppelin/contracts-wizard",
+  "stars": 294,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "AGPL-3.0",
+  "description": "Interactive smart contract generator based on OpenZeppelin Contracts."
+ },
+ "OpenZeppelin/openzeppelin-contracts": {
+  "full_name": "OpenZeppelin/openzeppelin-contracts",
+  "stars": 27247,
+  "pushed_at": "2026-09-21",
+  "archived": false,
+  "license": "MIT",
+  "description": "OpenZeppelin Contracts is a library for secure smart contract development."
+ },
+ "dynamic-labs/hackathon-starter-kit": {
+  "error": "<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+ },
+ "NomicFoundation/hardhat": {
+  "full_name": "NomicFoundation/hardhat",
+  "stars": 8507,
+  "pushed_at": "2026-09-21",
+  "archived": false,
+  "license": "NOASSERTION",
+  "description": "Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software. "
+ },
+ "foundry-rs/foundry": {
+  "full_name": "foundry-rs/foundry",
+  "stars": 10616,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "Apache-2.0",
+  "description": "Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust."
+ },
+ "wevm/viem": {
+  "full_name": "wevm/viem",
+  "stars": 3561,
+  "pushed_at": "2026-09-21",
+  "archived": false,
+  "license": "NOASSERTION",
+  "description": "TypeScript Interface for Ethereum"
+ },
+ "wevm/wagmi": {
+  "error": "<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+ },
+ "rainbow-me/rainbowkit": {
+  "full_name": "rainbow-me/rainbowkit",
+  "stars": 2834,
+  "pushed_at": "2026-05-12",
+  "archived": false,
+  "license": "MIT",
+  "description": "The best way to connect a wallet \ud83c\udf08 \ud83e\uddf0"
+ },
+ "expo/expo": {
+  "error": "<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+ },
+ "nativewind/nativewind": {
+  "full_name": "nativewind/nativewind",
+  "stars": 8098,
+  "pushed_at": "2026-09-15",
+  "archived": false,
+  "license": "MIT",
+  "description": "The utility-first workflow you love from Tailwind CSS in your React Native applications."
+ },
+ "heroui-inc/heroui-native": {
+  "full_name": "heroui-inc/heroui-native",
+  "stars": 3664,
+  "pushed_at": "2026-09-21",
+  "archived": false,
+  "license": "Apache-2.0",
+  "description": "\ud83d\udcf1Beautiful, fast and modern React Native UI library"
+ },
+ "founded-labs/react-native-reusables": {
+  "full_name": "founded-labs/react-native-reusables",
+  "stars": 8664,
+  "pushed_at": "2026-09-17",
+  "archived": false,
+  "license": "MIT",
+  "description": "Bringing shadcn/ui to React Native. Beautifully crafted components with Nativewind/Uniwind, open source, and almost as e"
+ },
+ "gluestack/gluestack-ui": {
+  "full_name": "gluestack/gluestack-ui",
+  "stars": 5316,
+  "pushed_at": "2026-09-02",
+  "archived": false,
+  "license": null,
+  "description": "React & React Native Components & Patterns (copy-paste components & patterns crafted with Tailwind CSS (NativeWind))"
+ },
+ "tamagui/tamagui": {
+  "full_name": "tamagui/tamagui",
+  "stars": 14200,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "MIT",
+  "description": "Style React fast with 100% parity on React Native, an optional UI kit, and optimizing compiler."
+ },
+ "clerk/clerk-expo-quickstart": {
+  "full_name": "clerk/clerk-expo-quickstart",
+  "stars": 51,
+  "pushed_at": "2026-08-05",
+  "archived": false,
+  "license": null,
+  "description": "The official companion repo for Clerk's Expo Quickstart "
+ },
+ "hyperknot/openfreemap": {
+  "full_name": "hyperknot/openfreemap",
+  "stars": 6046,
+  "pushed_at": "2026-09-13",
+  "archived": false,
+  "license": "NOASSERTION",
+  "description": "Free and open-source map hosting solution with custom styles for websites and apps, using OpenStreetMap data"
+ },
+ "PostHog/posthog": {
+  "full_name": "PostHog/posthog",
+  "stars": 39893,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "NOASSERTION",
+  "description": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools \u2013 AI observability, a"
+ },
+ "getsentry/sentry": {
+  "full_name": "getsentry/sentry",
+  "stars": 44822,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "NOASSERTION",
+  "description": "Developer-first error tracking and performance monitoring"
+ },
+ "deepseek-ai/deepseek-harness": {
+  "full_name": "deepseek-ai/deepseek-harness",
+  "stars": 232827,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "MIT",
+  "description": "DeepSeek Harness: Everything is a Plugin."
+ },
+ "badlogic/pi-mono": {
+  "full_name": "earendil-works/pi",
+  "stars": 108336,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "MIT",
+  "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI"
+ },
+ "unnoq/orpc": {
+  "error": "<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+ },
+ "middleapi/orpc": {
+  "full_name": "middleapi/orpc",
+  "stars": 5636,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "MIT",
+  "description": "Typesafe APIs Made Simple \ud83e\ude84"
+ },
+ "software-mansion/react-native-reanimated": {
+  "full_name": "software-mansion/react-native-reanimated",
+  "stars": 11005,
+  "pushed_at": "2026-09-22",
+  "archived": false,
+  "license": "MIT",
+  "description": "React Native's Animated library reimplemented"
+ },
+ "vocodedev/vocode-core": {
+  "full_name": "vocodedev/vocode-core",
+  "stars": 3794,
+  "pushed_at": "2024-11-15",
+  "archived": false,
+  "license": "MIT",
+  "description": "\ud83e\udd16 Build voice-based LLM agents. Modular + open source."
+ },
+ "AssemblyAI/assemblyai-python-sdk": {
+  "full_name": "AssemblyAI/assemblyai-python-sdk",
+  "stars": 210,
+  "pushed_at": "2026-09-21",
+  "archived": false,
+  "license": "MIT",
+  "description": "AssemblyAI's Official Python SDK"
+ }
+}

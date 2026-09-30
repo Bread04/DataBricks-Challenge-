@@ -1,0 +1,8 @@
+# bmad-forge-idea: pressure-test ideas against the rubric and the clock.
+
+[workflow]
+persistent_facts = [
+  "file:{project-root}/docs/research.md",
+  "This is a hackathon idea with a hard deadline (see docs/research.md). Press hardest on: can a working demo be shown within ~90 seconds; what must be mocked; which sponsor API is used meaningfully; would a judge say 'I've seen this before'.",
+  "End with KEEP / RESHAPE / KILL. Killing a weak idea at hour 1 is a good outcome.",
+]

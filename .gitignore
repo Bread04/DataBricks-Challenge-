@@ -1,0 +1,9 @@
+analysis/data/
+__pycache__/
+*.pyc
+~$*.pptx
+
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+*.log

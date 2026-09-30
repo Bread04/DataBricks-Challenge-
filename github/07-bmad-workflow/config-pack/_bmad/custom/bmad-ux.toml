@@ -1,0 +1,8 @@
+# bmad-ux: one demo journey, one deliberate aesthetic, token-first.
+
+[workflow]
+persistent_facts = [
+  "file:{project-root}/.toolkit/skills/hackathon-frontend/SKILL.md",
+  "file:{project-root}/.toolkit/02-frontend/docs/clarity-first-design.md",
+  "Scope UX to the single demo journey. Choose ONE deliberate aesthetic from .toolkit/02-frontend/docs/aesthetics-directory.md and record it with named tokens and contrast ratios. Apply the Reduction Framework: the judge's path touches only Tier-1 actions.",
+]

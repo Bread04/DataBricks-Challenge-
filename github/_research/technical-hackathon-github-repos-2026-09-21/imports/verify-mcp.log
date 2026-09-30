@@ -1,0 +1,24 @@
+batch retry <urlopen error [Errno 11001] getaddrinfo failed>
+ChromeDevTools/chrome-devtools-mcp       -> ChromeDevTools/chrome-devtools-mcp 52470 2026-09-22  Apache-2.0 
+firecrawl/firecrawl-mcp-server           -> firecrawl/firecrawl-mcp-server 7501 2026-09-22  MIT 
+neondatabase/mcp-server-neon             -> neondatabase/mcp-server-neon 649 2026-09-21  MIT 
+mongodb-js/mongodb-mcp-server            -> mongodb-js/mongodb-mcp-server 1135 2026-09-22  Apache-2.0 
+redis/mcp-redis                          -> redis/mcp-redis 625 2026-09-21  MIT 
+netlify/netlify-mcp                      -> netlify/netlify-mcp 63 2026-09-22  None 
+awslabs/mcp                              -> awslabs/mcp 9718 2026-09-22  Apache-2.0 
+bytebase/dbhub                           -> bytebase/dbhub 3550 2026-09-21  MIT 
+snyk/agent-scan                          -> snyk/agent-scan 3079 2026-09-22  Apache-2.0 
+anthropics/claude-plugins-official       -> anthropics/claude-plugins-official 36616 2026-09-21  Apache-2.0 
+obra/superpowers                         -> obra/superpowers 290060 2026-09-20  MIT 
+thedotmack/claude-mem                    -> thedotmack/claude-mem 94460 2026-09-22  Apache-2.0 
+modelcontextprotocol/registry            -> modelcontextprotocol/registry 7273 2026-09-16  NOASSERTION 
+modelcontextprotocol/mcpb                -> modelcontextprotocol/mcpb 2118 2026-05-26  NOASSERTION 
+browserbase/mcp-server-browserbase       -> browserbase/mcp-server-browserbase 3412 2026-07-20 ARCH Apache-2.0 
+perplexityai/modelcontextprotocol        -> perplexityai/modelcontextprotocol 2538 2026-08-27  MIT 
+exa-labs/exa-mcp-server                  -> exa-labs/exa-mcp-server 5040 2026-08-21  MIT 
+ref-tools/ref-tools-mcp                  -> ref-tools/ref-tools-mcp 1177 2026-09-14  MIT 
+penpot/penpot                            -> penpot/penpot 60258 2026-09-22  MPL-2.0 
+ollama/ollama                            -> ollama/ollama 181461 2026-09-21  MIT 
+anthropics/claude-code-action            -> anthropics/claude-code-action 8923 2026-09-19  MIT 
+modelcontextprotocol/servers-archived    -> modelcontextprotocol/servers-archived 303 2025-05-28 ARCH MIT 
+done

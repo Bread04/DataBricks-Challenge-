@@ -18,14 +18,29 @@ The Databricks AI Social Impact (DAISI) Challenge invites student teams from Sin
 - Round 1 is an idea submission; no working build is required. Submit via Devpost.
 - The three-slide template covers: Problem & why it matters; Solution & data; Databricks architecture & impact. Include the chosen problem, solution, datasets, intended architecture, and full member details (name, institution, course, year, email).
 
-## Selected problem: DengueRadar
+## Selected problem: DengueRadar (Real-time outbreak forecasting)
 
-Real-time dengue outbreak forecasting by Singapore planning area. Dengue is hyperendemic in Singapore; weather shifts may extend Aedes breeding seasons. The proposal is to provide 2-4 week predictive risk intelligence to help communities act earlier than reactive cluster monitoring.
+### Official brief (DAISI problem statement A2, kept verbatim)
 
-- Build a near-real-time pipeline joining NEA dengue clusters, weather readings, and geospatial data; engineer weather features and forecast risk by planning area.
+Dengue is hyperendemic in Singapore, with outbreaks affecting tens of thousands of residents. Rising temperatures and erratic rainfall extend the Aedes breeding season. NEA cluster monitoring today is largely reactive; predictive risk intelligence could let communities act 2-4 weeks ahead.
+
+**What to build:** a near-real-time pipeline combining live dengue cluster data, weather station readings and geospatial data into a forward-looking dengue risk forecast by planning area. Show streaming or incremental ingestion from live APIs, weather feature engineering, and a predictive model on an interactive map.
+
 - Data: NEA Dengue Clusters (GeoJSON polygons and case counts); Dengue Cases by Region (historical sub-region counts); real-time 5-minute station rainfall and island-wide air temperature APIs; historical rainfall collections (2016-2024) for training.
 - Target demo: map current cluster intensity; two-week forecast trained on weather and historical cases; explainable Low/Medium/High planning-area risk; compare performance with a recent-history-average baseline.
 - Stretch: hawker-centre density or green space as proxies, threshold alerts, and MLflow experiment comparisons.
+
+### Our angle (changed 28 Sep 2026, see `_bmad-output/planning-artifacts/sprint-change-proposal-2026-09-28.md`)
+
+**The problem, in our words.** NEA's public dashboards show where dengue clusters already are. By then people are sick and Aedes have been breeding for weeks. Nothing public shows Singapore's residents and community leaders where risk is heading in the next two weeks, or what to do about it.
+
+**The solution.** DengueRadar loads live NEA cluster and weather data incrementally into Delta, engineers weather and spatial features, and forecasts each planning area's risk (Low, Medium, High) two weeks ahead with a model trained on archived cluster history. Every forecast shows its top drivers and comes with a **prescriptive action plan**: what residents do at home, and what town councils, RCs and condo MCSTs inspect or clear first, and by when.
+
+**The audience.** Singapore's residents and the community leaders who act on the ground. NEA is the partner who acts on some causes, not the user. Seniors stay as a secondary "extra care" flag (Track A: Caring for an Ageing Singapore), not the headline.
+
+**Scope of the "NEA is reactive" claim.** It applies to NEA's public cluster dashboard (current clusters only, no forward-looking planning-area risk). NEA does publish national forecasts and a yearly risk map, so never say "NEA does not predict" without the word "public cluster dashboard". Confirm the wording on NEA's pages before slide 1. Deep Recon (30 Sep, `_bmad-output/planning-artifacts/research/`) found NEA's cluster map is current-state, its Dengue Community Alert System pushes current-state alerts via myENV, NEA's institute appears to run internal national forecasts, and a 2026 preprint forecasts planning-area hotspots one week ahead; so never say nobody forecasts, and describe NEA's alerts as current-state.
+
+**Method (from the datathon handbook).** Four hypotheses (weather lag, spatial spillover, recurrence, green space), time-ordered validation with a leave-areas-out check, a cost-matrix threshold, SHAP explanations, and the pitch blueprint in `github/08-datathon-handbook/01-playbook/pitch-and-presentation-guide.md`.
 
 ## Databricks build path
 
@@ -33,7 +48,7 @@ Real-time dengue outbreak forecasting by Singapore planning area. Dengue is hype
 2. Clean and join raw data into analysis-ready tables; add data-quality checks and lineage documentation.
 3. Train and evaluate forecasting models; use MLflow to compare experiments and register the best model.
 4. Present actionable results in an interactive map/dashboard using Databricks analytics and app capabilities.
-5. Stretch: catalogue data in Unity Catalog, document sources, govern access, and show lineage.
+5. Catalogue data in Unity Catalog, document sources, govern access, and show lineage.
 
 The data.gov.sg datastore API pattern is `https://data.gov.sg/api/action/datastore_search?resource_id=<dataset_id>&limit=100`. Confirm current endpoint and dataset availability before relying on a live demo.
 
